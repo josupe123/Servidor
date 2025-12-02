@@ -1,0 +1,42 @@
+// cena
+let cena = new THREE.Scene();
+let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+let render = new THREE.WebGLRenderer();
+render.setSize(window.innerWidth, window.innerHeight);
+document.getElementById("game").appendChild(render.domElement);
+
+// chão blocado
+let geometria = new THREE.BoxGeometry(1,1,1);
+let materialchao = new THREE.MeshBasicMaterial({color: 0x00ff00});
+
+for(let x=0; x<20; x++){
+    for(let z=0; z<20; z++){
+        let bloco = new THREE.Mesh(geometria, materialchao);
+        bloco.position.set(x-10, -1, z-10);
+        cena.add(bloco);
+    }
+}
+
+// player cubo
+let playerMat = new THREE.MeshBasicMaterial({color: 0xff0000});
+let player = new THREE.Mesh(geometria, playerMat);
+player.position.set(0,0,0);
+cena.add(player);
+
+// câmera
+camera.position.z = 5;
+
+// movimento básico
+document.addEventListener("keydown", e=>{
+    if(e.key=="w") player.position.z -= 1;
+    if(e.key=="s") player.position.z += 1;
+    if(e.key=="a") player.position.x -= 1;
+    if(e.key=="d") player.position.x += 1;
+});
+
+// loop
+function animar(){
+    requestAnimationFrame(animar);
+    render.render(cena, camera);
+}
+animar();
