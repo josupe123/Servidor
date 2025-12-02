@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background: #111;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 40px;
+    background: linear-gradient(45deg, #008cff, #7200ff);
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.conteudo {
+    padding: 25px;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+}
