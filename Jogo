@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>PixelMV - Servidor Oficial</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>PixelMV</h1>
+    <p>Servidor Jogável Web • RPG • Pixelmon</p>
+    <a href="jogo.html" class="botao">Entrar no Mundo</a>
+</header>
+
+<section class="conteudo">
+    <h2>Novidades</h2>
+    <ul>
+        <li>✔ Mundo 3D jogável</li>
+        <li>✔ Portais de ranking</li>
+        <li>✔ Drops especiais</li>
+    </ul>
+
+    <h2>Rankings</h2>
+    <ul>
+        <li>🏅 Rank 1 – Iniciante</li>
+        <li>🔥 Rank 2 – Explorador</li>
+        <li>💎 Rank 3 – Elite</li>
+        <li>👑 Rank 4 – Mestre</li>
+    </ul>
+</section>
+
+<footer>PixelMV © 2025 • Josupe Dev</footer>
+</body>
+</html>
