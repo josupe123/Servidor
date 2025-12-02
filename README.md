@@ -1,2 +1,11 @@
-# Servidor
+# ServidorPixelMV/
+│ index.html
+│ jogo.html
+│ estilo.css
+│ game.js
+│ assets/
+│   blocos/
+│   mobs/
+│   itens/
+└─ README.md
 Minecraft
